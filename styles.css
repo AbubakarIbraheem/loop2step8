@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: white;
+}
+.phone {
+  width: 300px;
+  height: 480px;
+  border: 10px solid black;
+  margin-left: 30rem;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.blue {
+  width: 100%;
+  height: 20rem;
+  background-color: blue;
+  transform: skew(55deg, -12deg);
+  position: absolute;
+  top: -5rem;
+  left: 8rem;
+}
+.head {
+  color: white;
+  position: absolute;
+  top: 2.25rem;
+  left: 8.5rem;
+  font-size: 13px;
+  font-weight: bolder;
+}
+.black {
+  width: 10rem;
+  height: 1.5rem;
+  background-color: black;
+  position: absolute;
+  left: 4.5rem;
+  border-radius: 3px;
+}
+#card {
+  width: 17rem;
+  height: 11rem;
+  position: absolute;
+  top: 4rem;
+  left: 0.85rem;
+}
+#lock {
+  width: 1rem;
+  height: 1rem;
+}
+.pay {
+  font-weight: bolder;
+  color: black;
+}
+.grey {
+  color: gray;
+}
+.main {
+  top: 15rem;
+  position: absolute;
+}
+.lock {
+  font-size: small;
+}
+.text {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  gap: 1rem;
+}
+.flipswitch {
+  position: absolute;
+  width: 35px;
+  left: 15rem;
+}
+.flipswitch input[type="checkbox"] {
+  display: none;
+}
+.flipswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0px solid #999999;
+  border-radius: 12px;
+}
+.flipswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.flipswitch-inner:before,
+.flipswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 20px;
+  padding: 0;
+  line-height: 20px;
+  font-size: 18px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.flipswitch-inner:before {
+  content: "";
+  padding-left: 12px;
+  background-color: #256799;
+  color: #ffffff;
+}
+.flipswitch-inner:after {
+  content: "";
+  padding-right: 12px;
+  background-color: #ebebeb;
+  color: #888888;
+  text-align: right;
+}
+.flipswitch-switch {
+  width: 18px;
+  margin: 1px;
+  background: #ffffff;
+  border: 0px solid #999999;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 13px;
+  transition: all 0.3s ease-in 0s;
+}
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+  margin-left: 0;
+}
+.flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+  right: 0;
+}
